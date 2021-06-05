@@ -1,17 +1,67 @@
 /*header*/
 *{
-    margin: 0%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 .header{
     height: 85px;
 }
 .button-left-header{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .logo{
     cursor: pointer;
     height: 85px;
     background-color: white;
     border: 0;
+    margin-right: 24px;
+}
+.filters-left{
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    font-size: 12.2px;
+    font-family: Arial ;
+    font-weight: 400;
+    height: 30px;
+    margin-left: 0;
+    padding: 0 12px;
+}
+.filters-left:hover{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+#buttons-filters-right{
+    margin-left: 210px;
+}
+.filters-right{
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    font-size: 12.2px;
+    font-family: Arial ;
+    font-weight: 400;
+    height: 30px;
+    margin-left: 0px;
+    padding: 0 12px;
+
+}
+.filters-right:hover{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+#iconos-general{
+    margin-left: 24px;
+}
+.iconos{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0px 10px;
+
 }
