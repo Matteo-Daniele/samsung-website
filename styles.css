@@ -64,6 +64,7 @@
     font-size: 20px;
     padding: 0px 10px;
 }
+/*main*/
 .title-picture{
     font-size: 46px;
     font-family: Arial, Helvetica, sans-serif;
@@ -84,13 +85,27 @@
     top: 428px;
     border: 0;
     background-color: transparent;
-    border-bottom: 2px solid white;
+  }
+.info-button:after {
+    display:block;  
+    content: '';
+    border-bottom: solid 2px white;  
     border-radius: 1px;
+    transform: scaleX(1);
 }
-.info-button:hover{
-    transition: 0.5s;   
-    border-bottom: none;
-    box-shadow: 0px 2px white;
+.info-button:hover:after {
+    animation-name: border-animation;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+  
+@keyframes border-animation {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
 }
 .video-button{
     cursor: pointer;
@@ -104,7 +119,124 @@
     height: 36px;
     width: 106px;
 }
+.video-button:hover{
+    transition: 0.2s;
+    background-color: rgb(204, 204, 204);
+}
 #picture-header{
     width: 100%;
     height: 100%;
+}
+.products-samsung{
+    font-size: 32px;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    height: 50px;
+    gap: 30px;
+}
+.elegidos-del-mes{
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.elegidos-del-mes:after{
+    display: block;
+    content: '';
+    transition: 0.2s;
+    border-bottom: 2px solid black;
+    transform: scaleX(0);
+}
+.elegidos-del-mes:hover::after{
+    animation-name: underlined-animation;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    transform: scaleX(1);
+}
+
+@keyframes underlined-animation{
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+.Recommended-phones{
+    margin-left: 20px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px 0px;
+}
+.cellphones{
+    cursor: pointer;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px ;
+    height: 290px;
+    width: 290px;
+    position: relative;
+    padding-top: 40px;
+}
+.s21ultra{
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    height: 600px;
+    width: 600px;
+    padding-top: 70px;
+}
+.pictures-cellphone{
+    height: 140px;
+    transition: 0.3s;
+}
+.text-phones{
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+#best-cellphone{
+    height:330px;
+    transition: 0.3s;
+}
+#text-best-phone{
+    padding-bottom: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.button-with-transition{
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px; 
+    position: absolute;
+    bottom: 0px;
+    transition: 0.3s;
+    transform: translateY(0) scaleZ(1);
+    opacity: 0;
+}
+.button-with-transition:hover{
+    background-color: rgb(82, 82, 82)
+}
+.cellphones:hover .button-with-transition{
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-15px) scaleZ(1);
+    opacity: 1;
+}
+.cellphones:hover img{
+    transition: 0.3s;
+    transform: scale(1.08)
 }
