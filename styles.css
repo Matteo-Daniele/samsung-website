@@ -486,6 +486,88 @@
     font-size: 16px;
     font-weight: 600;
 }
+/* footer */
+.footer{
+    margin-top: 80px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 500px;
+    grid-template-areas: 
+    "column-one column-two column-three column-four"
+    ;
+}
+.column-one{
+    grid-area: column-one;
+}
+.column-two{
+    grid-area: column-two;
+}
+.column-three{
+    grid-area: column-three ;
+}
+.column-four{
+    grid-area: column-four;
+}
+.horizontal-columns{
+    border: 1px solid rgb(223, 223, 223);
+}
+.horizontal-columns-title{
+    font-size: 16px;
+    padding: 10px;
+}
+.horizontal-columns-lists{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    font-size: 12.8px;
+    list-style-type: none;
+}
+li:hover{
+    color: rgb(71, 71, 153);
+    text-decoration-color: rgb(71, 71, 153) ;
+    text-decoration-style: solid ;
+    text-decoration-line: underline;
+}
+.middle-footer{
+    padding: 30px 20px;
+    font-size: 10.4px;
+    font-weight: 400;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+.last-footer{
+    display: flex;
+    flex-direction: row;    
+    font-size: 10.4px;
+}
+.last-footer-left{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    margin: 22px 20px;
+    gap: 24px;
+}
+.first-last-footer{
+    padding-right: 30px;
+    border-right: 2px solid rgb(216, 216, 216);
+    font-weight: 600;
+}
+.last-footer-right{
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 260px; 
+    gap: 16px;
+}
+.iconos-footer{
+    cursor: pointer;
+    font-size: 20px;
+}
 @media screen and (orientation: portrait) {
     nav {
         display: none;
@@ -528,43 +610,3 @@
         font-size: 4px;
     }
 }
-/* footer */
-.footer{
-    margin-top: 80px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 500px;
-    grid-template-areas: 
-    "column-one column-two column-three column-four"
-    ;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.column-one{
-    grid-area: column-one;
-}
-.column-two{
-    grid-area: column-two;
-}
-.column-three{
-    grid-area: column-three ;
-}
-.column-four{
-    grid-area: column-four;
-}
-.horizontal-columns{
-    border: 1px solid rgb(223, 223, 223);
-}
-.horizontal-columns-title{
-    font-size: 16px;
-    padding: 10px;
-}
-.horizontal-columns-lists{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    font-size: 12px;
-    list-style-type: none;
-}
-
