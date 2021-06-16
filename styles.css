@@ -17,7 +17,6 @@
     cursor: pointer;
     height: 85px;
     background-color: white;
-    border: 0;
     margin-right: 24px;
 }
 .filters-left{
@@ -123,7 +122,7 @@
     transition: 0.2s;
     background-color: rgb(204, 204, 204);
 }
-#picture-header{
+#picture-main{
     width: 100%;
     height: 100%;
 }
@@ -278,7 +277,7 @@
 }
 #selected-product{
     border-bottom: 2px solid black;
-    border-radius: .5px;
+    border-radius: .5px;    
 }
 #img-more-products{
     margin: 2%;
@@ -337,45 +336,51 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-.title-tv{
+.title{
     margin-top: 36px;
-    font-size: 40px;
+    font-size: 34px;
 }
-.list-tv{
+.list-select{
+    cursor: pointer;
     margin-top: 22px;
     display: flex;
     flex-direction: row;
     font-size: 16px;
+    font-weight: 600;
     gap: 30px;
 }
 .first-of-the-lists{
     border-bottom: 2px solid white;
     border-radius: 0.5px;
 }
-.text-list-tv{
+.selection:hover{ 
+    transition: 0.1s;
+    text-shadow: 0.3px 0px 4px rgb(63, 63, 63), -0.3px 0px 4px rgb(63, 63, 63); 
+}
+#text-list-tv{
     margin-top: 400px;
     font-size: 40px ;
     width: 528px;
 }
-#info-tv{
+.info{
     margin-top: 20px;
     cursor: pointer;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
-#info-tv:after{
+.info:after{
     display: block;
     content: '';
     transition: 0.2s;
     border-bottom: 2px solid rgb(255, 255, 255);
     transform: scaleX(1);
 }
-#info-tv:hover:after{
+.info:hover:after{
     animation-name: border-animation;
     animation-duration: 0.3s;
     animation-timing-function: ease-in-out;
 }
-#buy-tv{     
+.buy{     
     cursor: pointer;
     margin-top:10px ;
     border: 0;
@@ -385,7 +390,181 @@
     height: 35px;
     width: 110px;
 }
-#buy-tv:hover{
+.buy:hover{
     transition: 0.3s;
-    background-color: rgb(240, 240, 240) ;
+    background-color: rgb(207, 207, 207) ;
 }
+.home-items{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/ar/Product-Marketing_Family-Hub_pc_1440x810.jpg?$1440_810_JPG$);
+    height: 710px;
+    width: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#text-list-home{
+    margin-top: 470px;
+    font-size: 40px;
+}
+.buy-home{
+    width: 180px;
+}
+.explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.explore-title{
+    color: black;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+.explore-main{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+.explore-picture{
+    border-radius: 20px;
+    height: 590px;
+    width: 590px;
+}
+.list-main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 6px;
+    font-size: 26px;
+    font-weight: 600;
+    gap: 42px;
+}
+.inside-main-list{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.first-child-main-list{
+    padding-top: 20px;
+    border-top: 2.66px solid black;
+    border-radius: 1px;
+}
+.border-more-info{
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding-right: 30px;
+}
+.info-main-list{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-right: 398px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.info-main-list::after{
+    display: block;
+    content: '';
+    transition: 0.2s;
+    border-bottom: 1.6px solid black;
+    transform: scaleX(1);
+}
+.info-main-list:hover::after{
+    animation-name: border-animation;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+}
+.number-list{
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+@media screen and (orientation: portrait) {
+    nav {
+        display: none;
+    }
+    .button-left-header{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header{
+        height: 40px;
+        padding: 8px 10vw;  
+    }
+    .logo{
+        height: 32px;
+        margin: 0;
+    }
+    .iconos{
+        font-size: 14px;
+    }
+    .title-picture{
+        left: 10vw;
+        top: 14vh;
+        font-size: 10px;
+    }
+    .under-text{
+        top: 16vh;
+        font-size: 5px;
+        padding-right: 0;
+        width: 40%;
+    }
+    .info-button{
+        top: 19vh;
+        font-size: 4px;
+    }
+    .video-button{
+        left: 19vw;
+        top:18.9vh;
+        height: 1vh;
+        width: 6vw;
+        font-size: 4px;
+    }
+}
+/* footer */
+.footer{
+    margin-top: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 500px;
+    grid-template-areas: 
+    "column-one column-two column-three column-four"
+    ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.column-one{
+    grid-area: column-one;
+}
+.column-two{
+    grid-area: column-two;
+}
+.column-three{
+    grid-area: column-three ;
+}
+.column-four{
+    grid-area: column-four;
+}
+.horizontal-columns{
+    border: 1px solid rgb(223, 223, 223);
+}
+.horizontal-columns-title{
+    font-size: 16px;
+    padding: 10px;
+}
+.horizontal-columns-lists{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    font-size: 12px;
+    list-style-type: none;
+}
+

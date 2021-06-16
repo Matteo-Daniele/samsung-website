@@ -11,9 +11,7 @@
 <body>
     <header class="header">
         <div class="button-left-header">
-            <button class="logo">
-                <img class="logo" src="https://mitiendavision.com/content/images/thumbs/0014331_samsung_450.png" alt="Logo de Samsung">
-            </button>
+            <img class="logo" src="https://mitiendavision.com/content/images/thumbs/0014331_samsung_450.png" alt="Logo de Samsung">
             <nav>
                 <button class="filters-left">Móviles</button>
                 <button class="filters-left">TV & AV</button>
@@ -41,16 +39,16 @@
                 <p class="title-picture under-text">Estamos tomando decisiones y creando productos más ecológicos para ayudarte a cambiar el mundo.</p>
                 <button class="title-picture info-button">Más Información</button>
                 <button class="title-picture video-button">Mirár video</button>
-                <img id="picture-header" src="https://images.samsung.com/is/image/samsung/assets/uy/eco/2021-eco-themed-home-f01-kv-pc.jpg?$ORIGIN_JPG$" alt="Imagen de Pajaro de carton reciclable">
+                <img id="picture-main" src="https://images.samsung.com/is/image/samsung/assets/uy/eco/2021-eco-themed-home-f01-kv-pc.jpg?$ORIGIN_JPG$" alt="Imagen de Pajaro de carton reciclable">
             </div>
         </div>
         <div>
             <h5 class="products-samsung">Elegidos del mes</h5>
-            <nav class="products">
+            <div class="products">
                 <p class="elegidos-del-mes">Móviles</p>
                 <p class="elegidos-del-mes">TV & Audio</p>
                 <p class="elegidos-del-mes">Línea Hogar</p> 
-            </nav>
+            </div>
             <div class="Recommended-phones">
                 <div class="cellphones phone-top-left">
                     <img class="pictures-cellphone" src="https://images.samsung.com/is/image/samsung/assets/ar/home/A21s-160x160.png?$160_160_PNG$" alt="A21s">
@@ -81,13 +79,13 @@
         </div>
         <div class="Mobile"> 
             <h5 class="more-products">Mobile</h5>
-            <nav class="more-products list-more-products">
+            <div class="more-products list-more-products">
                 <p id="selected-product">Galaxy A52</p>
                 <p>Galaxy A72</p>
                 <p>Galaxy S21|S21+ 5G</p>
                 <p>Galaxy Z Fold2</p>
                 <p>Galaxy Buds Pro</p>
-            </nav>
+            </div>
             <img id="img-more-products" src="https://images.samsung.com/is/image/samsung/assets/ar/galaxy-a52/home/2_IM_A52-LTE_Product-KV_MO_624x352.jpg?$624_352_PNG$" alt="">
             <h5 class="more-products text-of-picture">Galaxy A52</h5>
             <div class="info-buy">
@@ -96,18 +94,130 @@
             </div>
         </div>
         <div class="tv-av">
-            <h5 class="title-tv">TV & AV</h5>
-            <nav class="list-tv">
-                <p class=first-of-the-lists>The Frame</p>
-                <p>QLED 8K</p>
-                <p>La primera mirada al 2021</p>
-            </nav>
-            <h5 class="text-list-tv">TV cuando está encendido, ARTE cuando está apagado</h5>
+            <h5 class="title">TV & AV</h5>
+            <div class="list-select">
+                <p class="first-of-the-lists selection">The Frame</p>
+                <p class="selection">QLED 8K</p>
+                <p class="selection">La primera mirada al 2021</p>
+            </div>
+            <h5 id="text-list-tv">TV cuando está encendido, ARTE cuando está apagado</h5>
             <div class="info-buy">
-                <p id="info-tv">Más información</p>
-                <button id="buy-tv">Comprar 🡥</button>
+                <p class="info">Más información</p>
+                <button class="buy">Comprar 🡥</button>
+            </div>
+        </div>
+        <div class="home-items">
+            <h5 class="title">Línea Hogar</h5>
+            <div class="list-select">
+                <p class="first-of-the-lists selection">Heladeras</p>
+                <p class="selection">Lavarropas</p>
+            </div>
+            <h5 id="text-list-home">Temperatura, frescura y humedad óptimas</h5>
+            <div class="info-buy">
+                <p class="info">Más información</p>
+                <button class="buy buy-home">Ver todas las heladeras</button>
+            </div>
+        </div> 
+        <div class="explore">
+            <h5 class="title explore-title">Explorar #DoWhatYouCant</h5>
+            <div class="explore-main">
+                <img class="explore-picture" src="https://images.samsung.com/is/image/samsung/assets/ar/home1/vd0035_home-explore-banner_pc_684x684.jpg?$684_684_PNG$" alt="Chica exaltada">
+                <div class="list-main">
+                    <div class="inside-main-list first-child-main-list">
+                        <p class="number-list">01</p>
+                        <div class="border-more-info">
+                            <h5>Descubrí lo nuevo</p>
+                            <p class="info-main-list">Más información</p>
+                        </div>
+                    </div>
+                    <div class="inside-main-list">
+                        <p class="number-list">02</p>
+                        <h5>Preguntamos, respondiste y lo cumplimos</p>
+                    </div>
+                    <div class="inside-main-list">
+                        <p class="number-list">03</p>
+                        <h5>Capturá toda la galaxia #withGalaxy</p>
+                    </div>
+                    <div class="inside-main-list">
+                        <p class="number-list">04</p>
+                        <h5>La vida y las historias de las mujeres con Samsung se convertirán en tu inspiración</p>
+                    </div>
+                    <div class="inside-main-list">
+                        <p class="number-list">05</p>
+                        <h5>Mantente a salvo, mantente sano</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="horizontal-columns column-one">
+                <h5 class="horizontal-columns-title">Productos y Servicios</h5>
+                <ul class="horizontal-columns-lists">
+                    <li>Smartphones</li>
+                    <li>Tablets</li>
+                    <li>Audio</li>
+                    <li>Watches</li>
+                    <li>Smart Switch</li>
+                    <li>Mobile Accessories</li>
+                    <li>TVs</li>
+                    <li>Lifestyle TV</li>
+                    <li>Sound Devices</li>
+                    <li>Heladeras</li>
+                    <li>Lavado</li>
+                    <li>Climatización</li>
+                    <li>Cocina</li>
+                    <li>Monitores</li>
+                </ul>
+            </div>
+            <div class="horizontal-columns column-two">
+                <h5 class="horizontal-columns-title">Shop</h5>
+                <ul class="horizontal-columns-lists">
+                    <li>Ofertas</li>
+                    <li>Buscar Locales</li>
+                    <li>Samsung Experience Store</li>
+                    <li>Samsung Members</li>
+                    <li>Botón de Arrepentimiento 🡥</li>
+                </ul>
+            </div>
+            <div class="horizontal-columns column-three">
+                <h5 class="horizontal-columns-title">Support</h5>
+                <ul class="horizontal-columns-lists">
+                    <li>Chat online 🡥</li>
+                    <li>Email de Soporte</li>
+                    <li>Teléfono de Soporte</li>
+                    <li>Soporte de Samsung Argentina</li>
+                    <li>Comunidad 🡥</li>
+                </ul>
+            </div>
+            <div class="horizontal-columns column-four">
+                <h5 class="horizontal-columns-title">Sustentabilidad</h5>
+                <ul class="horizontal-columns-lists">
+                    <li>Resumen</li>
+                    <li>Medioambiente</li>
+                    <li>Ciudadanía corporativa</li>
+                    <li>Responsabilidad digital</li>
+                    <li>Trabajo y derechos humanos</li>
+                    <li>Diversidad e inclusión</li>
+                    <li>Cadena de suministro sustentable</li>
+                </ul>
+                <h5 class="horizontal-columns-title">Acerca de nosotros</h5>
+                <ul class="horizontal-columns-lists">
+                    <li>Información de la empresa</li>
+                    <li>Área de negocio</li>
+                    <li>Identidad de la marca</li>
+                    <li>Oportunidades Laborales</li>
+                    <li>Relaciones con los inversores 🡥</li>
+                    <li>Noticias 🡥</li>
+                    <li>Ética</li>
+                    <li>Diseño de Samsung 🡥</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            
+        </div>
+    </footer>
 </body>
 </html>
